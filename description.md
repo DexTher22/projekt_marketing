@@ -18,10 +18,10 @@ copyright (r)
 
 Google regisztráció
 
-email *
-username *
-password *
-password again *
+email * \n
+username * \n
+password * \n
+password again * \n
 
 Login component link
 checkbox hírlevélre
