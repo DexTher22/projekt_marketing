@@ -1,19 +1,19 @@
 <div class="login-wrapper">
     <div class="login-form">
         <h2>Bejelentkezés</h2>
-        <p>Kérjük adja meg az adatait!</p>
-
+        <a routerLink="/">Vissza</a>
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" class="form-control" formControlName="email" placeholder="kispista@hotmail.hu" required>
+                <label for="email">Email-cím</label>
+                <input type="email" class="form-control" formControlName="email" required>
             </div>
             <div class="form-group">
                 <label for="password">Jelszó</label>
                 <input type="password" class="form-control" formControlName="password" required>
             </div>
-            <div class="form-group">
+            <div>
                 <button type="submit" class="btn btn-primary">Bejelentkezés</button>
+                <button type="submit" class="btn btn-primary m-3" routerLink="/register">Regisztráció</button>
             </div>
         </form>
     </div>
